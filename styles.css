@@ -1,0 +1,316 @@
+/*Color Variables*/
+:root{
+    --primary: #ddd;
+    --dark:#333;
+    --light:#fff;
+    --shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+
+html{
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+body{
+    background: #ccc;
+    margin:20px 40px;
+    line-height:1.4;
+}
+
+.wrapper{
+    display:grid;
+    grid-gap:25px;
+}
+
+/*Navigation*/
+.main-nav ul{
+    display:grid;
+    grid-gap:10px;
+    list-style-type:none;
+    padding:0;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.main-nav a{
+    display:block;
+    padding: 0.8rem 1rem;
+    background-color: var(--primary);
+    text-align:center;
+    color: var(--dark);
+    text-decoration:none;
+    box-shadow: var(--shadow);
+    
+}
+.main-nav ul a:hover{
+    background-color:var(--dark);
+    color:var(--light);
+}
+
+/*The Top Box and Sidebox*/
+#home{
+    display:grid;
+    grid-gap:20px;
+    grid-template-areas:
+    'showcase showcase sidebox1'
+    'showcase showcase sidebox1';
+}
+
+.showcase{
+    grid-area: showcase;
+    min-height: 300px;
+    background: url(img/Background.jpg);
+    background-size:cover;
+    background-position:center;
+    padding:3rem;
+    display:flex;
+    flex-direction:column;
+    align-items:start;
+    justify-content:center;
+    box-shadow: var(--shadow);
+}
+.showcase h1{
+    font-size:3rem;
+    color:white;
+    margin-bottom: 0;
+}
+.showcase p{
+    color: var(--light);
+    margin-top:0;
+}
+.sidebox
+{
+    display:grid;
+    color: var(--light);
+    background: url(img/trt.jpg);
+    background-size:cover;
+    background-position: center;
+    box-shadow: var(--shadow);
+    padding: 2.5rem;
+}
+.sidebox1{
+    grid-area:sidebox1
+}
+.sidebox p{
+display:block;
+justify-content: center;
+text-align:center;
+padding: 3rem;
+box-shadow: 0px 3px 7px rgba(255, 255, 255, 0.205);
+}
+
+
+/*About Section*/
+
+#about{
+    display:grid;
+    grid-gap:20px;
+    grid-template-areas: 'leftbox midbox rightbox';
+}
+.leftbox{
+    grid-area:leftbox;
+    background: url(img/lbox.jpg);
+    background-size:cover;
+    background-position:center;
+    padding: 2rem;
+    color:var(--light);
+    box-shadow: var(--shadow);
+}
+.midbox{
+    grid-area:midbox;
+    background: url(img/mbox.jpg);
+    background-size:cover;
+    background-position:center;
+    padding: 2rem;
+    color:var(--light);
+    box-shadow: var(--shadow);
+
+}
+.rightbox{
+    grid-area:rightbox;
+    background: url(img/rbox.jpg);
+    background-size:cover;
+    background-position:center;
+    padding: 2rem;
+    color:var(--light);
+    box-shadow: var(--shadow);
+}
+
+/*Skills Page Layout*/
+#skills1
+{
+    display:grid;
+    grid-gap:10px;
+    grid-template-areas: 
+    'b1 b1 b1 b1 b2 b3'
+    'b1 b1 b1 b1 b4 b5';
+
+}
+.b1{
+    grid-area:b1;
+    background: url(img/tech.jpg);
+    color: var(--dark);
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    justify-content:center;
+    font-size:2rem;
+    padding:2 rem;
+    box-shadow: var(--shadow);
+}
+.b2{
+    grid-area:b2;
+    background: url(img/code.jpg);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    justify-content:center;
+    padding: 2 rem;
+    box-shadow: var(--shadow);
+}
+.b3{
+    grid-area:b3;
+    background: url(img/htm.jpg);
+    color:white;
+    background-size: cover;
+    background-position:center;
+    text-align:center;
+    justify-content:center;
+    padding: 2 rem;
+    box-shadow: var(--shadow);
+}
+.b4{
+    grid-area:b4;
+    background: url(img/photo.jpg);
+    color:white;
+    background-size: cover;
+    background-position:center;
+    text-align:center;
+    justify-content:center;
+    padding: 2 rem;
+    box-shadow: var(--shadow);
+}
+.b5{
+    grid-area:b5;
+    background: url(img/graphy.jpg);
+    color:white;
+    background-size: cover;
+    background-position:center;
+    text-align:center;
+    justify-content:center;
+    padding: 2 rem;
+    box-shadow: var(--shadow);
+}
+
+#skills2{
+    display:grid;
+    grid-gap:10px;
+    grid-template-areas: 'c1 c1 c2 c3';
+}
+.c1{
+    grid-area:c1;
+    background: url(img/ntech.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    justify-content:center;
+    padding: 2 rem;
+    font-size:2rem;
+    box-shadow: var(--shadow);
+}
+.c2{
+    grid-area:c2;
+    color:white;
+    background: url(img/write.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    justify-content:center;
+    padding: 2 rem;
+    box-shadow: var(--shadow);
+}
+.c3{
+    grid-area:c3;
+    color:white;
+    background: url(img/wr.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    justify-content:center;
+    padding: 2 rem;
+    box-shadow: var(--shadow);
+}
+.c3 a{
+    color:white;
+}
+
+/*Projects Section*/
+#Projects{
+    display:grid;
+    grid-gap:20px;
+    grid-template-areas: 'bottom1 bottom2 bottom3';
+}
+#Projects img{
+    box-shadow: var(--shadow);
+}
+.bottom1{
+    grid-area:bottom1;
+}
+.bottom2{
+    grid-area:bottom2;
+}
+.bottom3{
+    grid-area:bottom3;
+}
+
+/*Footer*/
+footer{
+    line-height:20px;
+    word-spacing:30px;
+}
+footer a i{
+    color:black;
+}
+footer a i:hover{
+    color:hotpink;
+
+}
+
+/*Media Queries*/
+@media(max-width: 700px)
+{
+    .main-nav ul{
+        grid-template-columns: 1fr;
+    }
+    #home{
+        grid-template-areas: 'showcase showcase'
+        'sidebox1 sidebox1';
+    }
+    .showcase h1{
+        text-size:2rem;
+    }
+    #about{
+        grid-template-areas: 'leftbox' 'midbox' 'rightbox';
+    }
+    #skills1{
+        grid-template-areas: 'b1 b1'
+        'b2 b3'
+        'b4 b5';
+    }
+    #skills2{
+        grid-template-areas: 'c1 c1'
+        'c2 c3';
+    }
+    #Projects{
+        grid-template-areas: 'bottom1'
+        'bottom2' 'bottom3';
+    }
+}
+@media(max-width: 500px){
+    #skills1{
+        grid-template-areas: 'b1' 'b2' 'b3' 'b4' 'b5';
+    }
+    #skills2{
+        grid-template-areas: 'c1' 'c2' 'c3';
+    }
+}
